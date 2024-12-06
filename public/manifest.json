@@ -1,0 +1,29 @@
+{
+	"name": "Frontify",
+	"short_name": "Frontify",
+	"description": "React Frontify",
+	"icons": [
+		{
+			"src": "maskable.png",
+			"sizes": "196x196",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "logo192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "logo512x513.png",
+			"sizes": "512x513",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#293040",
+	"background_color": "#293040",
+	"display": "standalone",
+	"scope": "/",
+	"start_url": "/",
+	"orientation": "portrait"
+}
