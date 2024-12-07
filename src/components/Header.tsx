@@ -42,21 +42,17 @@ export default function Header() {
 	];
 
 	return (
-		<header className="relative md:border-b border-slate-500 text-white">
+		<header className="relative md:border-b border-slate-500 text-white tracking-wider">
 			<div
 				onClick={() => setMenu(!menu)}
-				className="absolute right-3 top-2 z-10 md:hidden"
+				className="absolute right-4 top-3 z-10 md:hidden"
 			>
-				{menu ? (
-					<IoClose className="size-9 " />
-				) : (
-					<MdMenu className=" size-9" />
-				)}
+				{menu ? <IoClose className="size-9" /> : <MdMenu className="size-9" />}
 			</div>
 
 			<nav
-				className={`absolute md:static pt-[10px] px-[2px] md:pt-0 flex flex-col gap-y-6 md:flex-row justify-between items-center md:h-[12vh]
-					z-0 tracking-wider lg:max-w-[1350px] mx-auto transition-transform duration-500
+				className={`absolute md:static pt-5 px-2 md:pt-0 flex flex-col gap-y-6 md:flex-row justify-between items-center md:h-[12vh]
+					z-0 lg:max-w-[1350px] mx-auto transition-transform duration-500
 					 ${menu ? "translate-y-0" : "-translate-y-full md:translate-y-0"} md:flex`}
 			>
 				<Link to="/" className="font-semibold text-[20px] uppercase">
@@ -76,9 +72,9 @@ export default function Header() {
 					))}
 				</div>
 
-				<div className="cursor-pointer my-4">
+				<div className="cursor-pointer my-4 text-[17px]">
 					<span className="py-[4px] px-2 bg-slate-700">EN</span>
-					<span className="py-[4px] px-2 border-r border-l border-slate-400">
+					<span className="py-[4px] px-4 border-r border-l border-slate-400">
 						RU
 					</span>
 					<span className="py-[4px] px-2">UZ</span>
