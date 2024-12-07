@@ -266,7 +266,7 @@ export default function Accardions() {
 						onClick={() => toggleAccardion(question.id)}
 						className="flex justify-between py-2 cursor-pointer"
 					>
-						<h2 className="md:text-[22px] md:leading-none">
+						<h2 className="text-[17px] md:text-[22px] md:leading-none">
 							{question.question}
 						</h2>
 
@@ -276,7 +276,7 @@ export default function Accardions() {
 							}}
 							transition={{ duration: 0.3 }}
 						>
-							<HiPlus className="size-5 md:size-7" />
+							<HiPlus className="size-6 md:size-7 ml-[2px]" />
 						</motion.div>
 					</div>
 
@@ -287,7 +287,7 @@ export default function Accardions() {
 								animate={{ height: "auto", opacity: 1 }}
 								exit={{ height: 0, opacity: 0 }}
 								transition={{ duration: 0.3 }}
-								className="text-[17px] text-slate-300 tracking-wider"
+								className="md:text-[17px] text-slate-300 tracking-wider"
 							>
 								{question.answer}
 							</motion.div>
