@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Home() {
 	return (
-		<div className="md:max-w-[1200px] mx-auto text-white flex flex-col gap-7 justify-center items-center h-screen md:h-[82vh] tracking-wider">
+		<div className="md:max-w-[1200px] h-[82vh] mx-auto text-white flex flex-col gap-7 justify-center items-center tracking-wider">
 			<h2 className="text-[34px] md:text-[64px] font-semibold leading-none">
 				<Typewriter
 					options={{

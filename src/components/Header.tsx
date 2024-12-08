@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { MdMenu } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 interface Links {
 	id: number;
@@ -41,11 +42,20 @@ export default function Header() {
 		},
 	];
 
+	const handleOpen = () => {
+		setMenu((prev) => !prev);
+	};
+
 	return (
-		<header className="bg-[#20293adf] opacity-60 h-[10vh] relative md:border-b border-slate-600 text-white tracking-wider">
+		<motion.header
+			className="bg-[#20293adf] opacity-60 relative md:border-b border-slate-600 text-white tracking-wider"
+			initial={{ height: "10vh" }}
+			animate={{ height: menu ? "23vh" : "10vh" }}
+			transition={{ duration: 0.4, ease: "easeInOut" }}
+		>
 			<div>
 				<div
-					onClick={() => setMenu(!menu)}
+					onClick={handleOpen}
 					className="absolute right-4 top-3 z-10 md:hidden"
 				>
 					{menu ? (
@@ -57,11 +67,15 @@ export default function Header() {
 			</div>
 
 			<nav
-				className={`absolute md:static pt-5 px-2 md:pt-0 flex flex-col gap-y-6 md:flex-row justify-between items-center md:h-[12vh]
-					z-0 lg:max-w-[1200px] mx-auto transition-transform duration-500
-					 ${menu ? "translate-y-0" : "-translate-y-full md:translate-y-0"} md:flex`}
+				className={`absolute md:static pt-4 px-2 md:pt-0 flex flex-col gap-y-6 md:flex-row justify-between items-center md:h-[12vh]
+        z-0 lg:max-w-[1200px] mx-auto transform transition-transform duration-500 ease-in-out
+				 ${menu ? "translate-y-0" : "-translate-y-full md:translate-y-0"}`}
 			>
-				<Link to="/" className="font-semibold text-[20px] uppercase">
+				<Link
+					to="/"
+					onClick={handleOpen}
+					className="font-semibold text-[20px] uppercase"
+				>
 					Frontify
 				</Link>
 
@@ -70,6 +84,7 @@ export default function Header() {
 						<Link
 							key={link.id}
 							to={link.hash}
+							onClick={handleOpen}
 							className={`pb-[1px] hover:border-b border-slate-400
 								 ${location === link.hash && "border-b"}`}
 						>
@@ -78,6 +93,6 @@ export default function Header() {
 					))}
 				</div>
 			</nav>
-		</header>
+		</motion.header>
 	);
 }

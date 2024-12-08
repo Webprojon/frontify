@@ -256,7 +256,7 @@ export default function Accardions() {
 	};
 
 	return (
-		<div className="px-2 md:px-0 md:max-w-[1200px] mx-auto text-white tracking-wide h-screen overflow-y-scroll noscroll">
+		<div className="px-2 md:px-0 md:max-w-[1200px] mx-auto text-white tracking-wide h-screen overflow-y-scroll noscroll z-0">
 			{questions.map((question) => (
 				<div
 					key={question.id}
