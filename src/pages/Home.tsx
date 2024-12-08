@@ -2,8 +2,8 @@ import Typewriter from "typewriter-effect";
 
 export default function Home() {
 	return (
-		<div className="md:max-w-[1200px] h-[82vh] mx-auto text-white flex flex-col gap-7 justify-center items-center tracking-wider">
-			<h2 className="text-[34px] md:text-[64px] font-semibold leading-none">
+		<div className="md:max-w-[1200px] h-[75vh] mx-auto text-white flex flex-col gap-y-10 justify-center items-center tracking-wider">
+			<h2 className="text-[36px] md:text-[64px] font-semibold leading-none">
 				<Typewriter
 					options={{
 						autoStart: true,
@@ -14,9 +14,9 @@ export default function Home() {
 					}}
 				/>
 			</h2>
-			<div className="text-center space-y-4 max-w-[1000px]">
+			<div className="text-center space-y-6 max-w-[1000px]">
 				<p className="text-[22px]">We're delighted to have you here.</p>
-				<p className="text-[18px] md:text-[20px]">
+				<p className="leading-10 text-[18px] md:text-[20px]">
 					At Frontify, you'll have the opportunity to enhance your frontend
 					skills and deepen your understanding of frontend theories.
 				</p>
