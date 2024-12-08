@@ -48,7 +48,7 @@ export default function Header() {
 
 	return (
 		<motion.header
-			className="bg-[#20293adf] opacity-60 relative md:border-b border-slate-600 text-white tracking-wider"
+			className="bg-[#20293adf] md:bg-transparent opacity-60 md:opacity-100 relative md:border-b border-slate-600 text-white tracking-wider"
 			initial={{ height: "10vh" }}
 			animate={{ height: menu ? "23vh" : "10vh" }}
 			transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -71,20 +71,15 @@ export default function Header() {
         z-0 lg:max-w-[1200px] mx-auto transform transition-transform duration-500 ease-in-out
 				 ${menu ? "translate-y-0" : "-translate-y-full md:translate-y-0"}`}
 			>
-				<Link
-					to="/"
-					onClick={handleOpen}
-					className="font-semibold text-[20px] uppercase"
-				>
+				<Link to="/" className="font-semibold text-[20px] uppercase">
 					Frontify
 				</Link>
 
-				<div className="flex flex-wrap justify-center font-medium gap-y-2 gap-x-10 md:text-[17px] uppercase">
+				<div className="flex flex-wrap justify-center font-medium gap-y-4 gap-x-10 md:text-[17px] uppercase mt-2 md:mt-0">
 					{LINKS.map((link) => (
 						<Link
 							key={link.id}
 							to={link.hash}
-							onClick={handleOpen}
 							className={`pb-[1px] hover:border-b border-slate-400
 								 ${location === link.hash && "border-b"}`}
 						>

@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Accardions from "./components/Accardions";
+import Soon from "./components/Soon";
 
 function App() {
 	return (
@@ -14,6 +15,9 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/html-css" element={<Accardions />} />
+					<Route path="/react" element={<Soon />} />
+					<Route path="/typescript" element={<Soon />} />
+					<Route path="/git-basics" element={<Soon />} />
 				</Routes>
 			</div>
 		</div>
