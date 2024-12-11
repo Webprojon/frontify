@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HiPlus } from "react-icons/hi2";
 import { useLocation } from "react-router-dom";
 import { QUESTIONS } from "../lib/data";
+import Feedback from "./Feedback";
+import { HiOutlinePlus } from "react-icons/hi";
 
 export default function Accardions() {
 	const location = useLocation().pathname;
@@ -35,7 +36,7 @@ export default function Accardions() {
 					>
 						<div
 							onClick={() => toggleAccardion(question.id)}
-							className="flex justify-between py-2 cursor-pointer"
+							className="flex items-start justify-between py-2 cursor-pointer"
 						>
 							<h2 className="text-[17px] md:text-[22px] md:leading-none">
 								{question.question}
@@ -47,7 +48,7 @@ export default function Accardions() {
 								}}
 								transition={{ duration: 0.3 }}
 							>
-								<HiPlus className="size-6 md:size-7 ml-[2px]" />
+								<HiOutlinePlus className="text-slate-300 size-5 md:size-7 ml-[2px]" />
 							</motion.div>
 						</div>
 
@@ -66,6 +67,8 @@ export default function Accardions() {
 						</AnimatePresence>
 					</div>
 				))}
+
+			<Feedback />
 		</div>
 	);
 }
