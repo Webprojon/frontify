@@ -56,7 +56,7 @@ export default function Header() {
 			<div>
 				<div
 					onClick={handleOpen}
-					className="absolute right-4 top-3 z-10 md:hidden"
+					className="absolute right-3 top-3 z-10 md:hidden"
 				>
 					{menu ? (
 						<IoClose className="size-9" />
