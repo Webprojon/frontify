@@ -67,11 +67,11 @@ export default function Header() {
 			</div>
 
 			<nav
-				className={`absolute md:static pt-4 px-2 md:pt-0 flex flex-col gap-y-6 md:flex-row justify-between items-center md:h-[12vh]
+				className={`absolute md:static pt-4 px-2 md:px-0 md:pt-0 flex flex-col gap-y-6 md:flex-row justify-between items-center md:h-[12vh]
         z-0 lg:max-w-[1200px] mx-auto transform transition-transform duration-500 ease-in-out
 				 ${menu ? "translate-y-0" : "-translate-y-full md:translate-y-0"}`}
 			>
-				<Link to="/" className="font-semibold text-[20px] uppercase">
+				<Link to="/" className="font-semibold text-[22px] uppercase">
 					Frontify
 				</Link>
 
