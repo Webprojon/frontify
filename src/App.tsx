@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Accardions from "./components/Accardions";
 import Soon from "./components/Soon";
+import { Toaster } from "react-hot-toast";
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/typescript" element={<Soon />} />
 					<Route path="/git-basics" element={<Soon />} />
 				</Routes>
+				<Toaster position="top-right" />
 			</div>
 		</div>
 	);
