@@ -27,13 +27,13 @@ export default function Header() {
 		},
 		{
 			id: 3,
-			hash: "/typescript",
-			link: "Typescript",
+			hash: "/react",
+			link: "React",
 		},
 		{
 			id: 4,
-			hash: "/react",
-			link: "React",
+			hash: "/typescript",
+			link: "Typescript",
 		},
 		{
 			id: 5,

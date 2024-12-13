@@ -17,7 +17,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/html-css" element={<Accardions />} />
 					<Route path="/javascript" element={<Accardions />} />
-					<Route path="/react" element={<Soon />} />
+					<Route path="/react" element={<Accardions />} />
 					<Route path="/typescript" element={<Soon />} />
 					<Route path="/git-basics" element={<Soon />} />
 				</Routes>
