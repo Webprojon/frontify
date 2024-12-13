@@ -36,7 +36,7 @@ export default function Accardions() {
 	}
 
 	return (
-		<div className="px-2 md:px-0 md:max-w-[1200px] mx-auto text-white tracking-wide h-[89vh] overflow-y-scroll noscroll z-0">
+		<div className="px-2 md:px-0 md:max-w-[1200px] mx-auto text-white tracking-wide h-[89vh] overflow-y-scroll noscroll z-0 mb-4">
 			{!loading &&
 				QUESTIONS.filter((q) => q.category === location).map((question) => (
 					<div
