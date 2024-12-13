@@ -48,7 +48,7 @@ export default function FeedbackForm() {
 	};
 
 	return (
-		<div className="max-w-[1200px] flex flex-col justify-center items-center mt-8 mb-4 md:mb-4">
+		<div className="max-w-[1200px] flex flex-col justify-center items-center mt-8 mb-2 md:mb-4">
 			<h2 className="text-[22px] leading-none font-semibold mb-4">
 				Give Us Feedback
 			</h2>
