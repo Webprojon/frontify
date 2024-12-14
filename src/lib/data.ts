@@ -4,84 +4,84 @@ export const QUESTIONS = [
 		question: "What is HTML ?",
 		answer:
 			"HTML stands for HyperText Markup Language and is used to structure content on web pages.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 2,
 		question: "What is the `<meta>` tag used for?",
 		answer:
 			"The `<meta>` tag defines metadata such as charset, viewport, and descriptions.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 3,
 		question: "What are semantic elements in HTML?",
 		answer:
 			"Semantic tags like `<header>`, `<footer>`, `<article>`, `<section>`, and `<nav>` improve SEO and accessibility.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 4,
 		question: "What is the purpose of the `<iframe>` tag?",
 		answer:
 			"The `<iframe>` tag is used to embed third-party web content into a web page.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 5,
 		question: "How can you use input validation in HTML?",
 		answer:
 			"Using HTML5 form attributes like `required`, `pattern`, and `type='email'`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 6,
 		question: "How do you use custom attributes with HTML?",
 		answer:
 			"Custom attributes use the `data-*` syntax. Example: `<div data-id='123'></div>`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 7,
 		question: "What are ARIA roles, and why are they important?",
 		answer:
 			"ARIA roles improve accessibility by defining roles for assistive technologies.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 8,
 		question: "What is the difference between `<ul>` and `<ol>`?",
 		answer:
 			"`<ul>` creates unordered lists, while `<ol>` creates ordered lists.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 9,
 		question: "What is the difference between `<div>` and `<span>`?",
 		answer:
 			"`<div>` is a block-level element, while `<span>` is an inline element.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 10,
 		question: "How do you include JavaScript in an HTML document?",
 		answer:
 			"Using the `<script>` tag. Example: `<script src='script.js'></script>`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 11,
 		question: "What are forms, and what are common form input types?",
 		answer:
 			"Forms are used for user input. Common types include `<input>`, `<textarea>`, `<select>`, and `<button>`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 12,
 		question: "What is the difference between `absolute` and `relative` URLs?",
 		answer:
 			"An absolute URL contains the full path, while a relative URL depends on the current document's location.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 13,
@@ -89,105 +89,105 @@ export const QUESTIONS = [
 			"What is the difference between `<button>` and `<input type='button'>`?",
 		answer:
 			"Both create clickable buttons, but `<button>` can include HTML content, while `<input type='button'>` cannot.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 14,
 		question: "What is CSS?",
 		answer:
 			"CSS stands for Cascading Style Sheets and is used to style HTML content.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 15,
 		question: "What is `flexbox` in CSS?",
 		answer:
 			"Flexbox is a layout model for distributing space and aligning items. Example: `display: flex;`.",
-		category: "/html-css",
+		category: "/s",
 	},
 	{
 		id: 16,
 		question: "What is `opacity` in CSS?",
 		answer:
 			"The `opacity` property controls the transparency of an element. Values range from `0` (completely transparent) to `1` (completely opaque).",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 17,
 		question: "What are transitions in CSS?",
 		answer:
 			"Transitions enable smooth changes between CSS properties over time using `transition: all 0.3s ease;`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 18,
 		question: "What are CSS pseudo-classes?",
 		answer:
 			"Pseudo-classes define a specific state for an element, e.g., `:hover`, `:nth-child()`, or `:focus`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 19,
 		question: "What are CSS pseudo-elements?",
 		answer:
 			"Pseudo-elements like `::before` and `::after` let you style parts of elements without adding extra HTML.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 20,
 		question: "How can you use `calc()` in CSS?",
 		answer:
 			"The `calc()` function dynamically calculates property values. Example: `width: calc(100% - 50px);`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 21,
 		question: "What are CSS keyframe animations?",
 		answer:
 			"CSS animations use `@keyframes` to define animation states over time and apply them with the `animation` property.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 22,
 		question: "How can you optimize CSS performance?",
 		answer:
 			"By minimizing CSS rules, combining selectors, and removing unused styles.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 23,
 		question: "What is the CSS `z-index` property used for?",
 		answer:
 			"The `z-index` determines the stacking order of overlapping elements.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 24,
 		question: "How does `position: sticky;` behave in CSS?",
 		answer:
 			"It allows an element to act as `relative` until a certain scroll position, then acts as `fixed`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 25,
 		question: "What is the difference between `grid` and `flexbox`?",
 		answer:
 			"Grid is for 2D layouts (both rows and columns), while flexbox is for 1D (row or column) layouts.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 26,
 		question: "What is the difference between `padding` and `margin`?",
 		answer:
 			"Padding is the space inside an element, while margin is the space outside the element.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 27,
 		question: "How do you implement CSS animations with `keyframes`?",
 		answer:
 			"Define a keyframe with `@keyframes` and use the `animation` property to apply it. Example: `@keyframes move { ... } animation: move 2s infinite;`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 28,
@@ -195,7 +195,7 @@ export const QUESTIONS = [
 			"What is the difference between `min-width`, `max-width`, and `width`?",
 		answer:
 			"`min-width` sets the minimum width, `max-width` sets the maximum allowed width, and `width` sets a fixed width.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 29,
@@ -203,7 +203,7 @@ export const QUESTIONS = [
 			"How do you center an element horizontally and vertically with CSS?",
 		answer:
 			"Using `flexbox`: `display: flex; justify-content: center; align-items: center;`.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 30,
@@ -211,7 +211,7 @@ export const QUESTIONS = [
 			"What is the difference between `relative`, `absolute`, and `fixed` positioning?",
 		answer:
 			"`relative`: positions an element relative to itself, `absolute`: relative to the nearest positioned ancestor, `fixed`: relative to the browser window.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 31,
@@ -219,7 +219,7 @@ export const QUESTIONS = [
 			"What is the difference between `inline`, `block`, and `inline-block` elements?",
 		answer:
 			"`inline` stays on the same line, `block` spans the full width, `inline-block` allows box properties while remaining inline.",
-		category: "/html-css",
+		category: "/",
 	},
 	{
 		id: 32,
