@@ -1,4 +1,3 @@
-import { title } from "framer-motion/client";
 import { Link, useLocation } from "react-router-dom";
 
 interface Links {
