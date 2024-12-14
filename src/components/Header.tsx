@@ -1,3 +1,4 @@
+import { title } from "framer-motion/client";
 import { Link, useLocation } from "react-router-dom";
 
 interface Links {
@@ -66,31 +67,37 @@ const RESPONSIVELINKS = [
 	{
 		id: 1,
 		hash: "/",
+		title: "HTML",
 		url: "https://skillicons.dev/icons?i=html",
 	},
 	{
 		id: 2,
 		hash: "/",
+		title: "CSS",
 		url: "https://skillicons.dev/icons?i=css",
 	},
 	{
 		id: 3,
 		hash: "/javascript",
+		title: "Javascript",
 		url: "https://skillicons.dev/icons?i=js",
 	},
 	{
 		id: 4,
 		hash: "/react",
+		title: "React",
 		url: "https://skillicons.dev/icons?i=react",
 	},
 	{
 		id: 5,
 		hash: "/typescript",
+		title: "Typescript",
 		url: "https://skillicons.dev/icons?i=ts",
 	},
 	{
 		id: 6,
 		hash: "/git-basics",
+		title: "Git",
 		url: "https://skillicons.dev/icons?i=git",
 	},
 ];
@@ -103,16 +110,23 @@ export function ResponsiveNavbar() {
 	};
 
 	return (
-		<header className="flex items-center justify-center md:hidden w-full bg-slate-800 fixed bottom-0 px-2 py-3 border-t border-slate-600">
+		<header className="flex items-center justify-center md:hidden w-full bg-slate-800 fixed bottom-0 p-2 h-[13vh] border-t border-slate-600">
 			<nav className="flex justify-between w-[99%]">
 				{RESPONSIVELINKS.map((link) => (
-					<Link to={link.hash} onClick={scrollTop}>
+					<Link
+						to={link.hash}
+						onClick={scrollTop}
+						className="flex flex-col items-center"
+					>
 						<img
 							key={link.id}
 							src={link.url}
 							alt={link.hash}
-							className="h-[40px]"
+							className="h-[42px]"
 						/>
+						<span className="text-[13px] text-slate-300 mt-1">
+							{link.title}
+						</span>
 					</Link>
 				))}
 			</nav>
