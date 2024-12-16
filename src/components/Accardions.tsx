@@ -36,12 +36,17 @@ export default function Accardions() {
 	}
 
 	return (
-		<div className="px-2 md:px-0 md:max-w-[1200px] mx-auto text-white tracking-wide pb-[5.5rem] md:pb-0">
+		<motion.div
+			className="px-2 md:px-0 md:max-w-[1200px] mx-auto text-white tracking-wide pb-[6rem] md:pb-0"
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 0.8, delay: 0.5 }}
+		>
 			{!loading &&
 				QUESTIONS.filter((q) => q.category === location).map((question) => (
 					<div
 						key={question.id}
-						className="border-b border-slate-600 my-6 pb-1 md:pb-2"
+						className="border-b border-slate-600 my-6 pb-1 md:pb-2 first:mt-1 md:first:mt-3"
 					>
 						<div
 							onClick={() => toggleAccardion(question.id)}
@@ -78,6 +83,6 @@ export default function Accardions() {
 				))}
 
 			{feedback ? <FeedbackForm /> : <FeedbackInfo />}
-		</div>
+		</motion.div>
 	);
 }
