@@ -27,7 +27,7 @@ export default function Accardions() {
 		return (
 			<div className="text-white h-[89vh]">
 				{loading && (
-					<div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[30px] font-medium">
+					<div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[22px] tracking-wider">
 						Loading...
 					</div>
 				)}

@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Accardions from "./components/Accardions";
 import { Toaster } from "react-hot-toast";
-import Navbar, { ResponsiveNavbar } from "./components/Header";
+import Navbar from "./components/Header";
 
 function App() {
 	return (
@@ -11,10 +11,9 @@ function App() {
 
 			<div className="relative z-10">
 				<Navbar />
-				<ResponsiveNavbar />
-
 				<Routes>
 					<Route path="/" element={<Accardions />} />
+					<Route path="/css" element={<Accardions />} />
 					<Route path="/javascript" element={<Accardions />} />
 					<Route path="/react" element={<Accardions />} />
 					<Route path="/typescript" element={<Accardions />} />

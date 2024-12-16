@@ -96,98 +96,98 @@ export const QUESTIONS = [
 		question: "What is CSS?",
 		answer:
 			"CSS stands for Cascading Style Sheets and is used to style HTML content.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 15,
 		question: "What is `flexbox` in CSS?",
 		answer:
 			"Flexbox is a layout model for distributing space and aligning items. Example: `display: flex;`.",
-		category: "/s",
+		category: "/css",
 	},
 	{
 		id: 16,
 		question: "What is `opacity` in CSS?",
 		answer:
 			"The `opacity` property controls the transparency of an element. Values range from `0` (completely transparent) to `1` (completely opaque).",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 17,
 		question: "What are transitions in CSS?",
 		answer:
 			"Transitions enable smooth changes between CSS properties over time using `transition: all 0.3s ease;`.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 18,
 		question: "What are CSS pseudo-classes?",
 		answer:
 			"Pseudo-classes define a specific state for an element, e.g., `:hover`, `:nth-child()`, or `:focus`.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 19,
 		question: "What are CSS pseudo-elements?",
 		answer:
 			"Pseudo-elements like `::before` and `::after` let you style parts of elements without adding extra HTML.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 20,
 		question: "How can you use `calc()` in CSS?",
 		answer:
 			"The `calc()` function dynamically calculates property values. Example: `width: calc(100% - 50px);`.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 21,
 		question: "What are CSS keyframe animations?",
 		answer:
 			"CSS animations use `@keyframes` to define animation states over time and apply them with the `animation` property.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 22,
 		question: "How can you optimize CSS performance?",
 		answer:
 			"By minimizing CSS rules, combining selectors, and removing unused styles.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 23,
 		question: "What is the CSS `z-index` property used for?",
 		answer:
 			"The `z-index` determines the stacking order of overlapping elements.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 24,
 		question: "How does `position: sticky;` behave in CSS?",
 		answer:
 			"It allows an element to act as `relative` until a certain scroll position, then acts as `fixed`.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 25,
 		question: "What is the difference between `grid` and `flexbox`?",
 		answer:
 			"Grid is for 2D layouts (both rows and columns), while flexbox is for 1D (row or column) layouts.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 26,
 		question: "What is the difference between `padding` and `margin`?",
 		answer:
 			"Padding is the space inside an element, while margin is the space outside the element.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 27,
 		question: "How do you implement CSS animations with `keyframes`?",
 		answer:
 			"Define a keyframe with `@keyframes` and use the `animation` property to apply it. Example: `@keyframes move { ... } animation: move 2s infinite;`.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 28,
@@ -195,7 +195,7 @@ export const QUESTIONS = [
 			"What is the difference between `min-width`, `max-width`, and `width`?",
 		answer:
 			"`min-width` sets the minimum width, `max-width` sets the maximum allowed width, and `width` sets a fixed width.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 29,
@@ -203,7 +203,7 @@ export const QUESTIONS = [
 			"How do you center an element horizontally and vertically with CSS?",
 		answer:
 			"Using `flexbox`: `display: flex; justify-content: center; align-items: center;`.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 30,
@@ -211,7 +211,7 @@ export const QUESTIONS = [
 			"What is the difference between `relative`, `absolute`, and `fixed` positioning?",
 		answer:
 			"`relative`: positions an element relative to itself, `absolute`: relative to the nearest positioned ancestor, `fixed`: relative to the browser window.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 31,
@@ -219,7 +219,7 @@ export const QUESTIONS = [
 			"What is the difference between `inline`, `block`, and `inline-block` elements?",
 		answer:
 			"`inline` stays on the same line, `block` spans the full width, `inline-block` allows box properties while remaining inline.",
-		category: "/",
+		category: "/css",
 	},
 	{
 		id: 32,
