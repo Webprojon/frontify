@@ -1,17 +1,6 @@
 import toast from "react-hot-toast";
 
 export default function Feedback() {
-	//const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-	//	e.preventDefault();
-	//	const formdata = new FormData(e.currentTarget);
-	//	const username = formdata.get("username");
-	//	const text = formdata.get("text");
-
-	//	console.log(username, text);
-
-	//	toast.success("Feedback sent successfully!");
-	//};
-
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		const formdata = new FormData(e.currentTarget);

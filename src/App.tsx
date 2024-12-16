@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Accardions from "./components/Accardions";
-import Soon from "./components/Soon";
 import { Toaster } from "react-hot-toast";
 import Navbar, { ResponsiveNavbar } from "./components/Header";
 
@@ -18,8 +17,8 @@ function App() {
 					<Route path="/" element={<Accardions />} />
 					<Route path="/javascript" element={<Accardions />} />
 					<Route path="/react" element={<Accardions />} />
-					<Route path="/typescript" element={<Soon />} />
-					<Route path="/git-basics" element={<Soon />} />
+					<Route path="/typescript" element={<Accardions />} />
+					<Route path="/git-basics" element={<Accardions />} />
 				</Routes>
 				<Toaster position="top-right" />
 			</div>

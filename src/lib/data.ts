@@ -838,4 +838,252 @@ export const QUESTIONS = [
 			"The `useEffect` hook handles side effects like data fetching. Be cautious with dependencies to avoid infinite loops or unnecessary re-renders.",
 		category: "/react",
 	},
+	{
+		id: 119,
+		question: "What is a union type?",
+		answer:
+			"A union type allows a variable to hold values of multiple types. You can define a union type using the pipe (|) symbol. For example, `let value: string | number;` means the variable value can hold either a string or a number.",
+		category: "/typescript",
+	},
+	{
+		id: 120,
+		question: "What is type inference in TypeScript?",
+		answer:
+			"TypeScript automatically infers the type of a variable based on its initial value. For example, if you write `let name = 'John';`, TypeScript infers that `name` is of type `string`.",
+		category: "/typescript",
+	},
+	{
+		id: 121,
+		question: "How do you create and use TypeScript enums?",
+		answer:
+			"Enums in TypeScript are a way to define a set of named constants. You can create an enum using the `enum` keyword. Example: `enum Direction { Up, Down, Left, Right } let move: Direction = Direction.Up;`",
+		category: "/typescript",
+	},
+	{
+		id: 122,
+		question: "How does TypeScript handle null and undefined?",
+		answer:
+			"TypeScript distinguishes between `null` and `undefined`. You can explicitly allow `null` or `undefined` values by using union types. Example: `let value: string | null = null;`",
+		category: "/typescript",
+	},
+	{
+		id: 123,
+		question: "How do you handle type assertions in TypeScript?",
+		answer:
+			"Type assertions in TypeScript allow you to tell TypeScript to treat a value as a specific type. You can use `as` or angle brackets (`<>`) for type assertions. Example: `let myValue = <string>someValue;` or `let myValue = someValue as string;`",
+		category: "/typescript",
+	},
+	{
+		id: 124,
+		question: "How do you define optional properties in TypeScript?",
+		answer:
+			"You can define optional properties in an interface or type by using the `?` symbol. Example: `interface Person { name: string; age?: number; }`",
+		category: "/typescript",
+	},
+	{
+		id: 125,
+		question: "What is the purpose of the never type in TypeScript?",
+		answer:
+			"The `never` type represents values that never occur, such as functions that throw exceptions or have infinite loops. Example: `function throwError(message: string): never { throw new Error(message); }`",
+		category: "/typescript",
+	},
+	{
+		id: 126,
+		question: "How do you use modules and namespaces in TypeScript?",
+		answer:
+			"TypeScript supports both modules and namespaces for organizing code. Modules are used to split code into separate files using `import` and `export`. Namespaces group related code within a single file.",
+		category: "/typescript",
+	},
+	{
+		id: 127,
+		question: "How do you integrate TypeScript with a React project?",
+		answer:
+			"To integrate TypeScript with React, install TypeScript and type definitions for React and rename your files to `.tsx`. Example: `npm install typescript @types/react @types/react-dom`.",
+		category: "/typescript",
+	},
+	{
+		id: 128,
+		question: "What are the benefits of using TypeScript in a project?",
+		answer:
+			"TypeScript provides static type checking, improved developer experience with better autocompletion, enhanced maintainability through explicit types, and better tooling support for refactoring.",
+		category: "/typescript",
+	},
+	{
+		id: 129,
+		question: "What are type guards, and how do they work in TypeScript?",
+		answer:
+			"Type guards are expressions that narrow down the type of a variable within a specific block of code. You can use `typeof` or `instanceof` for type guards. Example: `function isString(value: any): value is string { return typeof value === 'string'; }`",
+		category: "/typescript",
+	},
+	{
+		id: 130,
+		question: "What is TypeScript, and how is it different from JavaScript?",
+		answer:
+			"TypeScript is a superset of JavaScript that adds static typing and other features like interfaces, enums, and generics. Unlike JavaScript, TypeScript requires compilation to produce JavaScript code.",
+		category: "/typescript",
+	},
+	{
+		id: 131,
+		question: "What are generics in TypeScript, and when would you use them?",
+		answer:
+			"Generics in TypeScript allow you to create reusable components or functions that work with multiple types. Example: `function identity<T>(arg: T): T { return arg; }` Generics are useful when you need to write functions or classes that work with different data types.",
+		category: "/typescript",
+	},
+	{
+		id: 132,
+		question: "What is the difference between any and unknown in TypeScript?",
+		answer:
+			"`any` can represent any value and loses type safety, while `unknown` represents any value but requires type checking before usage, maintaining type safety.",
+		category: "/typescript",
+	},
+	{
+		id: 133,
+		question: "What are TypeScript types, and how do they help in development?",
+		answer:
+			"TypeScript types enable static type checking, which helps catch errors early. They also improve code readability, assist with autocompletion, and make refactoring safer and more predictable.",
+		category: "/typescript",
+	},
+	{
+		id: 134,
+		question:
+			"What is the difference between interface and type in TypeScript?",
+		answer:
+			"An `interface` is typically used for object types and can be extended or implemented. A `type` can represent any type, including primitives, objects, and unions, and cannot be directly extended.",
+		category: "/typescript",
+	},
+	{
+		id: 135,
+		question: "What is a commit in Git?",
+		answer:
+			"A commit in Git is a snapshot of your changes in the repository. It records changes to the files and adds a unique identifier (hash), allowing you to track the history of your project.",
+		category: "/git-basics",
+	},
+	{
+		id: 136,
+		question: "How do you undo a commit in Git?",
+		answer:
+			"To undo the most recent commit without losing changes, use `git reset --soft HEAD~1`. To completely remove it, use `git reset --hard HEAD~1` (be cautious as this deletes changes).",
+		category: "/git-basics",
+	},
+	{
+		id: 137,
+		question: "What is Git and how does it work?",
+		answer:
+			"Git is a distributed version control system used to track changes in files and collaborate on software development projects. It works by recording snapshots (commits) of a project's files and allows multiple users to work on the project simultaneously.",
+		category: "/git-basics",
+	},
+	{
+		id: 138,
+		question: "What are Git tags, and how are they used?",
+		answer:
+			"Git tags are used to mark specific points in a repository's history, usually to indicate important versions or releases. You can create a tag with `git tag <tag-name>` and push it with `git push origin <tag-name>`.",
+		category: "/git-basics",
+	},
+	{
+		id: 139,
+		question: "How do you view the commit history in Git?",
+		answer:
+			"You can view the commit history using `git log`. This command displays a list of commits in reverse chronological order, showing the commit hash, author, date, and message.",
+		category: "/git-basics",
+	},
+	{
+		id: 140,
+		question: "What is the purpose of a pull request (PR)?",
+		answer:
+			"A pull request (PR) is a way to propose changes in a Git repository. It allows developers to review, discuss, and approve changes before they are merged into the main branch.",
+		category: "/git-basics",
+	},
+	{
+		id: 141,
+		question: "How do you resolve merge conflicts in Git?",
+		answer:
+			"To resolve merge conflicts, Git marks the conflicting files. Open the files, manually edit the conflict areas, and then add the resolved files with `git add <file>`. Finally, commit the resolution using `git commit`.",
+		category: "/git-basics",
+	},
+	{
+		id: 142,
+		question: "How do you clone a repository from GitHub?",
+		answer:
+			"To clone a repository from GitHub, use the command `git clone <repository-url>`. This creates a local copy of the repository on your machine.",
+		category: "/git-basics",
+	},
+	{
+		id: 143,
+		question: "What is the purpose of the .gitignore file?",
+		answer:
+			"The `.gitignore` file specifies which files and directories Git should ignore. It's used to exclude files like build artifacts, dependencies, or sensitive information from being tracked.",
+		category: "/git-basics",
+	},
+	{
+		id: 144,
+		question: "How do you create a new repository on GitHub?",
+		answer:
+			"To create a new repository on GitHub, log in to your account, click the '+' icon in the top right, and select 'New repository'. Fill in the details and click 'Create repository'.",
+		category: "/git-basics",
+	},
+	{
+		id: 145,
+		question: "What is the difference between Git and GitHub?",
+		answer:
+			"Git is a version control system for tracking changes in code, while GitHub is a platform that hosts Git repositories and provides features for collaboration, issue tracking, and version control in the cloud.",
+		category: "/git-basics",
+	},
+	{
+		id: 146,
+		question: "What is the difference between rebase and merge in Git?",
+		answer:
+			"Rebase rewrites commit history to apply changes from one branch onto another, creating a linear history. Merge combines the history of two branches, preserving the commit history and creating a merge commit.",
+		category: "/git-basics",
+	},
+	{
+		id: 147,
+		question: "What is the difference between git merge and git rebase?",
+		answer:
+			"`git merge` combines branches by creating a merge commit, keeping all history. `git rebase` rewrites history to apply commits on top of another branch, making the history linear and easier to follow.",
+		category: "/git-basics",
+	},
+	{
+		id: 148,
+		question: "How do you push changes to a remote repository on GitHub?",
+		answer:
+			"To push changes to a remote repository, use `git push origin <branch-name>`. This uploads your local commits to the remote repository on GitHub.",
+		category: "/git-basics",
+	},
+	{
+		id: 149,
+		question: "What strategies are available for resolving conflicts in Git?",
+		answer:
+			"Strategies to resolve Git conflicts include: manually editing conflicting files, using a merge tool, and opting for `git checkout --ours` or `git checkout --theirs` to resolve conflicts automatically in favor of one branch.",
+		category: "/git-basics",
+	},
+	{
+		id: 150,
+		question: "How can you combine or modify history between branches in Git?",
+		answer:
+			"You can combine or modify history using `git rebase`, `git merge`, or `git cherry-pick`. These commands allow you to apply commits from one branch to another, rewrite commit history, or apply specific commits.",
+		category: "/git-basics",
+	},
+	{
+		id: 151,
+		question: "When is the git cherry-pick command used, and what does it do?",
+		answer:
+			"The `git cherry-pick` command is used to apply the changes from a specific commit from one branch to another. It is useful when you want to selectively apply changes without merging entire branches.",
+		category: "/git-basics",
+	},
+	{
+		id: 152,
+		question:
+			"How is the git stash command used, and in what scenarios is it helpful?",
+		answer:
+			"The `git stash` command temporarily saves changes that are not ready to be committed. It is useful when you need to switch branches but want to preserve your current work for later.",
+		category: "/git-basics",
+	},
+	{
+		id: 153,
+		question:
+			"What is a branch in Git, and how do you create and switch between branches?",
+		answer:
+			"A branch in Git allows you to work on a separate line of development. You can create a new branch with `git branch <branch-name>` and switch between branches using `git checkout <branch-name>` or `git switch <branch-name>`.",
+		category: "/git-basics",
+	},
 ];

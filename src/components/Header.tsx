@@ -113,16 +113,12 @@ export function ResponsiveNavbar() {
 			<nav className="flex justify-between w-[99%]">
 				{RESPONSIVELINKS.map((link) => (
 					<Link
+						key={link.id}
 						to={link.hash}
 						onClick={scrollTop}
 						className="flex flex-col items-center"
 					>
-						<img
-							key={link.id}
-							src={link.url}
-							alt={link.hash}
-							className="h-[42px]"
-						/>
+						<img src={link.url} alt={link.hash} className="h-[42px]" />
 						<span className="text-[13px] text-slate-300 mt-1">
 							{link.title}
 						</span>
