@@ -5,7 +5,7 @@ export default function FeedbackInfo() {
 	const { setToggleFeedback } = useGlobalStates((state) => state);
 
 	return (
-		<div className="tracking-widest flex flex-col justify-center items-center gap-2 mb-4 mt-8">
+		<div className="tracking-widest flex flex-col justify-center items-center gap-2 mb-4 mt-3">
 			<h3 className="text-[28px]">Help improve Frontify</h3>
 			<p className="text-[18px] font-light">Was this helpful ?</p>
 			<div

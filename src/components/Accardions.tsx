@@ -37,7 +37,7 @@ export default function Accardions() {
 
 	return (
 		<motion.div
-			className="px-2 md:px-0 md:max-w-[1200px] mx-auto text-white tracking-wide pb-[6rem] md:pb-0"
+			className="px-2 md:px-0 md:max-w-[1200px] mx-auto text-white tracking-wide pb-[6.2rem] md:pb-0"
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.8, delay: 0.5 }}

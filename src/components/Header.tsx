@@ -117,9 +117,9 @@ export function ResponsiveNavbar() {
 	return (
 		<motion.header
 			className="flex items-center justify-center md:hidden w-full bg-slate-800 fixed bottom-0 p-2 h-[13vh] border-t border-slate-600"
-			initial={{ translateY: "50%" }}
+			initial={{ translateY: "150%" }}
 			animate={{ translateY: "1%" }}
-			transition={{ duration: 0.8, delay: 0.5 }}
+			transition={{ duration: 0.8, delay: 2 }}
 		>
 			<nav className="flex justify-between w-[99%]">
 				{RESPONSIVELINKS.map((link) => (
