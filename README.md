@@ -1,1 +1,1 @@
-### [Frontify](https://frontifyy.vercel.app)
+### [Frontify](https://frontifyy.vercel.app/)
